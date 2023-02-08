@@ -7,4 +7,14 @@ describedBy:
       required: true
       example: 93e80db0-a7d4-11ed-afa1-0242ac120002
     client_secret:
-       
+      type: string
+      required: true
+      example: a4ab263ca7d411edafa10242ac120002
+  responses:
+    401:
+      body:
+        application/json:
+          example: |
+            {
+              "error": "Invalid Credentials"
+            }
